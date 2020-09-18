@@ -68,4 +68,9 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+
+  #clear-button {
+    margin: 50px 40%;
+    width: 20%;
+  }
   
