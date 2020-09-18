@@ -14,8 +14,9 @@ Links
 Deployed site: https://jjbidwell.github.io/work-day-planner/
 Github repository: https://github.com/jjbidwell/work-day-planner
 
-screenshots: 
- Empty calendar:
+Screenshots
+================================================================================
+Empty calendar:
 ![Empty calendar](./assets/images/empty.png)
 
 Filled-out calendar: 
