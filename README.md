@@ -1,4 +1,4 @@
-# word-day-planner
+# work-day-planner
 Description:
 
 This is a simple day planner I have made that can:
