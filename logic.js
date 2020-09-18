@@ -1,6 +1,6 @@
 var currentDate = moment().format('dddd MMMM Do, YYYY');
 var currentHour = parseInt(moment().format('H'));
-var savedEvent = ["", "", "", "", "", "", "", "", "" ];
+var savedEvents = ["", "", "", "", "", "", "", "", "" ];
 
 $('#currentDay').text(currentDate);
 
@@ -14,9 +14,20 @@ for (var i = 9; i < 18; i++){
     }
 }
 
+function render(){
+    if (localStorage.getItem('Saved events') === null){
+    } else {
+        var iDunno = localStorage.getItem('Saved events');
+        console.log(iDunno);
+    }
+}
+
+
+
 $('.saveBtn').on('click', function(){
     var targetedText = $(this).siblings()[1].value;
     var whereToGo = parseInt($(this).parent().attr('id')[5] + $(this).parent().attr('id')[6]);
-    savedEvent[whereToGo - 9] = targetedText;
-    console.log(savedEvent);
+    savedEvents[whereToGo - 9] = targetedText;
+    localStorage.setItem('Saved events', savedEvents);
+    render();
 })
